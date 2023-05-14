@@ -28,10 +28,14 @@ body{
     height: 15vh;
     display: flex;
 }
-.logo{
+.logo {
     width: 15%;
     display: flex;
     justify-content: center;
+}
+
+.logo img{
+    width: 3rem;
 }
 
 .navegador{
