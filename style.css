@@ -15,6 +15,7 @@ body{
 .contenedor {
     width: 100%;
 
+
 }
 
 .seccion1 {
@@ -36,7 +37,24 @@ body{
     width: 100%;
     justify-content: center;
     text-align: center;
+
+    text-decoration: none;
+}
+.reserva a  {
+    text-decoration: none;
+
+}
+
+.reserva h4{
     color: white;
+    font-size: 15px;
+}
+
+
+.reserva:hover h4{
+    background-color: #F23D2E;
+    color: black;
+    cursor: pointer;
 }
 
 .navbar {
@@ -54,7 +72,7 @@ body{
 }
 
 .logo img{
-    width: 3rem;
+    width: 4rem;
 }
 
 .navegador{
@@ -139,7 +157,7 @@ display: flex;
 }
 
 .foto img{
-    width: 300px;
+    width: 200px;
 }
 
 .footer {
@@ -165,4 +183,89 @@ display: flex;
     margin: 10px;
 }
 
+/* Nosotros */
+
+.nosotros {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.quienesSomos{
+    width: 100%;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.queHacemos{
+    width: 100%;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.frasefundador{
+    width: 100%;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Portfolio*/
+
+.parques{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+}
+
+/* Servicios */
+
+h1 {
+    color: red;
+
+}
+
+
+/* Indumentaria */
+h1 {
+    color: red;
+
+}
+
+}
+ /* MOBILE */
+@media (max-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    .navegador{
+        display: none;
+    }
+}
+
+
+/* TABLET */
+@media (min-width: 769px) and (max-width: 1024px) {
+   
 }
