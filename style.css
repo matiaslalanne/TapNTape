@@ -16,18 +16,23 @@
 }
 
 .seccion1 {
-    height: 100vh;
+    height: 100;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     
+ 
 }
 
 .cabecera {
     width: 100%;
-    height: 20vh;
+    height: 20%;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #ffffff;
 }
 .reserva{
     background-color: black;
@@ -58,6 +63,9 @@
     width: 100%;
     height: 80%;
     display: flex;
+    /* margin: 0 auto;
+    padding: 10px; */
+    transition: all 0.3s ease;
 
 
 }
@@ -87,17 +95,21 @@
 	display: flex;
 	justify-content: space-around;
 
+
+
 }
 .menu-horizontal > li > a{
 	display: block;
 	padding: 15px 20px;
 	color: black;
 	text-decoration: none;
+
 }
 
 
 .menu-horizontal > li:hover{
 	background-color: red;
+    border-radius: 20px;
 }
 .menu-vertical{
 	position: absolute;
@@ -105,6 +117,8 @@
 	list-style: none;
 	width: 200px;
 	background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+
 }
 .menu-horizontal li:hover .menu-vertical{
 	display: block;
@@ -121,6 +135,13 @@
 
 }
 
+.home-title a {
+    background-color: yellow;
+    border-radius: 20px;
+
+}
+
+
 .img-redes {
     width: 2rem;
     position: fixed;
@@ -134,41 +155,44 @@
     transform: scale(1.5);
 }
 
-.presentacion {
-    width: 100%;
-    height: 75vh;
+
+
+.presentacion{
+    margin-top: 100px;
     display: flex;
-    flex-direction: row;
-    margin: 80px;
-}
-.texto{
-color: #F23D2E;
-width: 50%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 20px;
+
+
 }
 
-.texto h1{
-    font-size: 70px;
+.img-presentacion {
+
+    width: 100%;
+    height: 100%;
 }
 
-.texto p {
-    font-size: 30px;
+                                        /* Seccion 2 */
+
+.seccion2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+
 }
 
-.foto{
-display: flex;
- width: 50%;
- justify-content: center;
- text-align: center;
- align-items: center;
-}
 
-.foto img{
-    width: 200px;
+
+
+                                        /* Seccion 3 - Sneak Peek */
+
+
+.seccion3 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(./img/3.png);
+
 }
 
 .sneakPeek{
@@ -180,13 +204,39 @@ display: flex;
     margin-bottom: 80px;
 
 }
-
+.sneak {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .titulo-sneak{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     font-size: 30px;
+    color: white;
+}
+
+.subscribe{
+    width: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    position: relative;
+  overflow: hidden;
+
+}
+
+.subscribe :hover{
+    transform: scale(1.5);
+}
+
+.sneak {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sneak-box{
@@ -199,19 +249,55 @@ display: flex;
 
 }
 
+.sneak-box h1{
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+
+}
 
 
 .sneak img{
-    width: 250px;
+    width: 200px;
     border-radius: 20px;
     cursor: pointer;
     
 }
+.pie-sneak{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
 
 
+}
+.info-sneak{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 30px;
 
 
-  
+}
+
+.play{
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.play img{
+    width: 40px;
+    background-color: white;
+
+}
+
 
 .sneak button {
     display: inline-block;
@@ -239,32 +325,70 @@ display: flex;
   }
   
 
+                                    /* Footer  */
+
 .footer {
     width: 100%;
-    height: 10vh;
+    height: 80Vh;
     display: flex;
-    background-color: #333333;
-    justify-content:end;
-    align-items: center;
-    
+    background-image: url(./img/9.png);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
     
 }
+
+.titulo-footer{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+
+}
+
+.titulo-footer h1{
+    color: white;
+}
+
+.iconos-footer{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 100%;
+    height: 60%;
+    justify-content: space-around;
+}
+
+.iconos-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titulo-icono{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
 
 .img-footer{
-    width: 2rem;
-    margin: 20px;
-    
+    width: 80px;
 }
 
-.mail a{
-    text-decoration: none;
-    color: #ffffff;
-    margin: 10px;
-}
 
-/* Nosotros */
+
+
+
+
+
+
+                                    /* Nosotros */
 
 .nosotros {
+    margin-top: 100px;
     width: 100%;
     height: 70vh;
     display: flex;
@@ -302,7 +426,7 @@ display: flex;
     justify-content: space-around;
 }
 
-/*Portfolio*/
+                                    /*Portfolio*/
 
 .portfolio{
     width: 100%;
@@ -312,6 +436,7 @@ display: flex;
     align-items: center;
     margin: 20px;
     justify-content: space-around;
+    margin-top: 150px;
 
 }
 
