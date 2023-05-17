@@ -464,9 +464,14 @@
     position:relative;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-left: 1270px;
+    margin-bottom: 20px;
 
 }
 
+.icono-arriba img{
+    width: 4rem;
+}
 
 
 
