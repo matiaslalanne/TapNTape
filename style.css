@@ -268,6 +268,7 @@
     width: 200px;
     border-radius: 20px;
     cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     
 }
 .pie-sneak{
@@ -308,30 +309,6 @@
 }
 
 
-.sneak button {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 4px;
-    background-color: #ff6f61;
-    color: #ffffff;
-    border: none;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
-  
-  .sneak button:hover {
-    background-color: #ff8f81;
-    cursor: pointer;
-  }
-  
-  .sneak button:active {
-    background-color: #e6594c;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-  }
   
                                     /* Seccion 4  */
 
@@ -361,9 +338,8 @@
     text-align: center;
     background-position: center;
     flex: 1;
-  position: relative;
-
-
+    position: relative;
+ 
 }
 
 .seccion4 h1{
@@ -521,27 +497,40 @@
     
 }
 
-.seccion-nosotros1 img{
+.seccion-nosotros1{
+    width: 100%;
+    height: 80Vh;
+    margin-top: 20vh;
+    display: flex;
+    background-image: url(./img/nosotros1.png);
     background-size: cover;
-    object-fit: cover;
+    background-position: center;
 }
 .seccion-nosotros2{
-    display: flex;
     width: 100%;
-    height: 60%;
+    height: 80Vh;
+    display: flex;
+    background-image: url(./img/nosotros2.png);
     background-size: cover;
+    background-position: center; 
+
 }
 .seccion-nosotros3{
-    display: flex;
     width: 100%;
-    height: 60%;
+    height: 80Vh;
+    display: flex;
+    background-image: url(./img/nosotros3.png);
     background-size: cover;
+    background-position: center; 
 }
 .seccion-nosotros4{
-    display: flex;
     width: 100%;
-    height: 60%;
+    height: 80Vh;
+    display: flex;
+    background-image: url(./img/nosotros4.png);
     background-size: cover;
+    background-position: center; 
+
 }
 
 .footer-nosotros {
@@ -551,53 +540,203 @@
     background-image: url(./img/nosotros5.png);
     background-size: cover;
     background-position: center;
+    flex-direction: column;
+    /* margin-top: -10px; */
+    
+}
+
+                                    /*Portfolio*/
+
+
+.portada-portfolio{
+    width: 100%;
+    height: 80Vh;
+    margin-top: 150px;
+    display: flex;
+    background-image: url(./img/portfolio1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.oasis-portada{
+    width: 100%;
+    height: 80Vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/portfolio2.png);
+    background-size: cover;
+    background-position: center;    
+}
+
+.div-btntb{
+    margin-top: 180px;
+    width: 240px;
+    height: 50px;
+    background-color: none;
+    /* display: none; */
+    
+}
+
+.btn-youtube{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 30px;
+    color: white;
+    background-color: #F23D2E;
+    font-size: 1rem;
+}
+
+.oasis-videos{
+width: 100%;
+    height: 80Vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/portfolio3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.oldskull-portada{
+width: 100%;
+    height: 80Vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/portfolio4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.oldskull-videos{
+    width: 100%;
+    height: 80Vh;
+    display: flex;
+    background-image: url(./img/portfolio5.png);
+    background-size: cover;
+    background-position: center;
+}
+.krabi-portada{
+width: 100%;
+    height: 80Vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/portfolio6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.krabi-videos{
+width: 100%;
+    height: 80Vh;
+    display: flex;
+    background-image: url(./img/portfolio7.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-box{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.portfolio-box-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-box-img img{
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.sneak-box h1{
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+
+}
+
+.pie-portfolio-box-img{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+
+
+}
+.portfolio-box-img{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    white-space: nowrap;
+
+}
+
+
+.play{
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.play img{
+    width: 40px;
+    background-color: white;
+
+}
+
+
+.footer-portfolio {
+    width: 100%;
+    height: 80Vh;
+    display: flex;
+    background-image: url(./img/portfolio8.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     margin-top: -2px;
     
 }
 
-                                    /*Portfolio*/
 
-.portfolio{
-    width: 100%;
-    height: 65vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px;
-    justify-content: space-around;
-    margin-top: 150px;
-
-}
-
-.parques {
-    width: 30%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.parques iframe{
-    width: 90%;
-}
-
-/* Servicios */
-
-h1 {
-    color: red;
-
-}
-
-
-/* Indumentaria */
+                                    /* Coleccion TNT */
 h1 {
     color: red;
 
 }
 
 }
- /* MOBILE */
+
+
+
+
+
+
+
+                                        /* MOBILE */
 @media (max-width: 480px) {
     * {
         margin: 0;
