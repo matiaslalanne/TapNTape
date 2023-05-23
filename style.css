@@ -9,6 +9,12 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
 .contenedor {
     width: 100%;
 
@@ -55,7 +61,7 @@
 
 .reserva:hover h4{
     background-color: #F23D2E;
-    color: black;
+    color: white;
     cursor: pointer;
 }
 
@@ -94,6 +100,7 @@
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
+    
 
 
 
@@ -125,6 +132,8 @@
 }
 .menu-vertical li:hover{
 	background-color: black;
+    border-radius: 20px;
+
 }
 
 .menu-vertical li a{
@@ -136,8 +145,10 @@
 }
 
 .actual-title {
-    background-color: yellow;
+
+    background-color: #ffe500;
     border-radius: 20px;
+   
 
 }
 
@@ -362,14 +373,8 @@
 .img-servicios a{
     text-decoration: none;
 }
-.img-servicios h2{
-    display: none;
-}
 
-.img-servicios:hover h2{
-    display: flex;
-    color: white;
-}
+
 
 .img-servicios-box{
     width: 100%;
@@ -384,7 +389,7 @@
 }
 
 #img-servicios1:hover{
-    background-image: url(./img/servicios1.1.jpg);
+    background-image: url(./img/servicios1.1.png);
     background-size: cover;
 }
 #img-servicios2{
@@ -393,7 +398,7 @@
 }
 
 #img-servicios2:hover{
-    background-image: url(./img/servicios2.1.jpg);
+    background-image: url(./img/servicios2.1.png);
     background-size: cover;
 }
 #img-servicios3{
@@ -402,13 +407,15 @@
 }
 
 #img-servicios3:hover{
-    background-image: url(./img/servicios3.1.jpg);
+    background-image: url(./img/servicios3.1.png);
     background-size: cover;
 }
 
-
-
-
+.img-servicios-btn{
+    
+    width: 100%;
+    height: 20%;
+}
 
 
 
@@ -476,6 +483,7 @@
     margin-left: 1270px;
     margin-bottom: 20px;
 
+
 }
 
 .icono-arriba img{
@@ -508,39 +516,47 @@
 }
 .seccion-nosotros2{
     width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     background-image: url(./img/nosotros2.png);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    margin-top: 20px;
+
 
 }
 .seccion-nosotros3{
     width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     background-image: url(./img/nosotros3.png);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    margin-top: 20px;
+
 }
 .seccion-nosotros4{
     width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     background-image: url(./img/nosotros4.png);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    margin-top: 20px;
+
 
 }
 
 .footer-nosotros {
     width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     background-image: url(./img/nosotros5.png);
     background-size: cover;
     background-position: center;
     flex-direction: column;
+    margin-top: 20px;
+
     /* margin-top: -10px; */
     
 }
@@ -567,6 +583,7 @@
     background-image: url(./img/portfolio2.png);
     background-size: cover;
     background-position: center;    
+    margin-top: 20px;
 }
 
 .div-btntb{
@@ -597,6 +614,7 @@ width: 100%;
     background-image: url(./img/portfolio3.png);
     background-size: cover;
     background-position: center;
+    margin-top: 20px;
 }
 
 .oldskull-portada{
@@ -608,6 +626,7 @@ width: 100%;
     background-image: url(./img/portfolio4.png);
     background-size: cover;
     background-position: center;
+    margin-top: 20px;
 }
 
 .oldskull-videos{
@@ -617,6 +636,7 @@ width: 100%;
     background-image: url(./img/portfolio5.png);
     background-size: cover;
     background-position: center;
+    margin-top: 20px;
 }
 .krabi-portada{
 width: 100%;
@@ -627,6 +647,7 @@ width: 100%;
     background-image: url(./img/portfolio6.png);
     background-size: cover;
     background-position: center;
+    margin-top: 20px;
 }
 
 .krabi-videos{
@@ -636,6 +657,7 @@ width: 100%;
     background-image: url(./img/portfolio7.png);
     background-size: cover;
     background-position: center;
+    margin-top: 20px;
 }
 
 .portfolio-box{
@@ -718,6 +740,97 @@ width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: -2px;
+    margin-top: 20px;
+    
+}
+                                    /* Servicios */
+            
+.seccion-servicios1{
+    margin-top: 135px;
+    display: flex;
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    overflow: hidden;
+    
+    
+}
+
+.seccion-servicios1{
+    width: 100%;
+    height: 80Vh;
+    margin-top: 20vh;
+    display: flex;
+    background-image: url(./img/servicios1-seccion.png);
+    background-size: cover;
+    background-position: center top;
+    
+}
+.seccion-servicios2{
+    width: 100%;
+    height: 90Vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    background-image: url(./img/servicios2-seccion.png);
+    background-size: cover;
+    background-position: center top; 
+    margin-top: 20px;
+ 
+}
+
+
+}
+.seccion-servicios3{
+    width: 100%;
+    height: 90Vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    background-image: url(./img/servicios3-seccion.png);
+    background-size: cover;
+    background-position: center top; 
+    margin-top: 20px;
+}
+.seccion-servicios4{
+    width: 100%;
+    height: 90Vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    background-image: url(./img/servicios4-seccion.png);
+    background-size: cover;
+    background-position: center top; 
+    margin-top: 20px;
+
+}
+
+.button-servicios {
+    background-color: #2D4460;
+    color: white;
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.btn-servicios-a{
+    margin-bottom: 50px;
+    margin-right: 70px;
+}
+
+.footer-servicios {
+    width: 100%;
+    height: 90Vh;
+    display: flex;
+    background-image: url(./img/servicios5-seccion.png);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    margin-top: 20px;
+    
     
 }
 
@@ -728,7 +841,7 @@ h1 {
 
 }
 
-}
+
 
 
 

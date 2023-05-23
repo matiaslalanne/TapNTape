@@ -10,17 +10,17 @@
 
 </head>
 <body>
-    <header class="cabecera">
+    <header class="cabecera" id="navbar">
         <div class="reserva">
             <a target="_blank" href="http://wa.me/+393513786219"><h4>Reservá tu producción de video con 10% OFF</h4></a>
             
         </div>
         <div class="navbar">
-            <div class="logo">
-                <a href="./index.html"><img src="/TapNTape/img/logo.png" alt="Logo TNT"></a> 
+            <div class="logo" >
+                <a href="./index.html"><img id="logo" src="/TapNTape/img/logo.png" alt="Logo TNT"></a> 
              </div>
              <nav class="navegador">
-                 <ul class="menu-horizontal">
+                 <ul class="menu-horizontal" id="menu-horizontal">
                     <li >
                         <a href="./index.html">Home</a>
                         
@@ -30,10 +30,11 @@
                          <ul class="menu-vertical">
                              <li><a href="./nosotros.html">Quienes Somos</a></li>
                              <li><a href="./nosotros.html">Que Hacemos</a></li>
+                             <li><a href="./nosotros.html">Pilares</a></li>
                          </ul>
                      </li>
-                     <li >
-                        <a class="actual-title" href="./portfolio.html">Portfolio</a>
+                     <li id="actual-title" class="actual-title" >
+                        <a  href="./portfolio.html">Portfolio</a>
                         <ul class="menu-vertical">
                             <li><a href="./portfolio.html">Oasis Wakepark</a></li>
                             <li><a href="./portfolio.html">Old Skull Park</a></li>
@@ -60,7 +61,7 @@
                      </li>
                      
                      <li>
-                         <a href="#">Contacto</a>
+                         <a href="#footer-portfolio">Contacto</a>
                          <ul class="menu-vertical">
                              <li><a href="http://wa.me/+393513786219" target="_blank">WhatsApp</a></li>
                              <li><a href="mailto:Tap.and.tape@gmail.com"target="_blank">Mail</a></li>
@@ -153,7 +154,7 @@
     
 
     
-    <footer class="footer-portfolio">
+    <footer class="footer-portfolio" id="footer-portfolio">
         <div class="titulo-footer">
             <H1>FEEDBACK</H1>
         </div>
@@ -190,5 +191,6 @@
         <a href="./portfolio.html" class="icono-arriba"><img src="./img/icono-arriba.png" alt=""></a>
     </footer>
     
+    <script src="./main.js"></script>
 </body>
 </html>

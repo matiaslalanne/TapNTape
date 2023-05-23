@@ -9,26 +9,27 @@
    
 </head>
 <body>
-    <header class="cabecera">
+    <header class="cabecera" id="navbar">
         <div class="reserva">
             <a target="_blank" href="http://wa.me/+393513786219"><h4>Reservá tu producción de video con 10% OFF</h4></a>
             
         </div>
         <div class="navbar">
-            <div class="logo">
-                <a href="./index.html"><img src="/TapNTape/img/logo.png" alt="Logo TNT"></a> 
+            <div class="logo" >
+                <a href="./index.html"><img id="logo" src="/TapNTape/img/logo.png" alt="Logo TNT"></a> 
              </div>
              <nav class="navegador">
-                 <ul class="menu-horizontal">
+                 <ul class="menu-horizontal" id="menu-horizontal">
                     <li >
                         <a href="./index.html">Home</a>
                         
                     </li>
-                     <li >
-                         <a class="actual-title" href="./nosotros.html" >Nosotros</a>
+                     <li id="actual-title" class="actual-title">
+                         <a  href="./nosotros.html" >Nosotros</a>
                          <ul class="menu-vertical">
                              <li><a href="./nosotros.html">Quienes Somos</a></li>
                              <li><a href="./nosotros.html">Que Hacemos</a></li>
+                             <li><a href="./nosotros.html">Pilares</a></li>
                          </ul>
                      </li>
                      <li>
@@ -59,7 +60,7 @@
                      </li>
                      
                      <li>
-                         <a href="#">Contacto</a>
+                         <a href="#footer-nosotros">Contacto</a>
                          <ul class="menu-vertical">
                              <li><a href="http://wa.me/+393513786219" target="_blank">WhatsApp</a></li>
                              <li><a href="mailto:Tap.and.tape@gmail.com"target="_blank">Mail</a></li>
@@ -90,7 +91,7 @@
 </div>
 
     
-<footer class="footer-nosotros">
+<footer class="footer-nosotros" id="footer-nosotros">
     <div class="titulo-footer">
         <H1>FEEDBACK</H1>
     </div>
@@ -127,5 +128,6 @@
     <a href="./nosotros.html" class="icono-arriba"><img src="./img/icono-arriba.png" alt=""></a>
 </footer>
     
+<script src="./main.js"></script>
 </body>
 </html>
