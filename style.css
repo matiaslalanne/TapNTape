@@ -566,7 +566,7 @@ html {
 
 .portada-portfolio{
     width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     margin-top: 150px;
     display: flex;
     background-image: url(./img/portfolio1.png);
@@ -607,7 +607,7 @@ html {
 
 .oasis-videos{
 width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -619,7 +619,7 @@ width: 100%;
 
 .oldskull-portada{
 width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -631,7 +631,7 @@ width: 100%;
 
 .oldskull-videos{
     width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     background-image: url(./img/portfolio5.png);
     background-size: cover;
@@ -640,7 +640,7 @@ width: 100%;
 }
 .krabi-portada{
 width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -652,7 +652,7 @@ width: 100%;
 
 .krabi-videos{
 width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     background-image: url(./img/portfolio7.png);
     background-size: cover;
