@@ -91,7 +91,6 @@ html {
 	max-width: 900px;
 	margin: auto;
 	/* background-color: #333; */
-
 	font-size: 20px;
     
 
@@ -100,6 +99,7 @@ html {
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
+
     
 
 
@@ -111,12 +111,15 @@ html {
 	color: black;
 	text-decoration: none;
 
+
 }
 
 
 .menu-horizontal > li:hover{
-	background-color: red;
+	/* background-color: red; */
     border-radius: 20px;
+    text-decoration: underline;
+
 }
 .menu-vertical{
 	position: absolute;
@@ -146,12 +149,12 @@ html {
 
 .actual-title {
 
-    background-color: #ffe500;
+    /* background-color: #ffe500; */
     border-radius: 20px;
-   
+    text-decoration: underline ;
+
 
 }
-
 
 .img-redes {
     width: 2rem;
@@ -234,6 +237,7 @@ html {
     align-items: center;
     font-size: 30px;
     color: white;
+
 }
 
 .subscribe{
@@ -424,7 +428,7 @@ html {
 
 .footer {
     width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     background-image: url(./img/9.png);
     background-size: cover;
@@ -576,7 +580,7 @@ html {
 
 .oasis-portada{
     width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -584,6 +588,7 @@ html {
     background-size: cover;
     background-position: center;    
     margin-top: 20px;
+
 }
 
 .div-btntb{
@@ -637,7 +642,57 @@ width: 100%;
     background-size: cover;
     background-position: center;
     margin-top: 20px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+.carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    height: 100%;
+    width: 85%;
+    align-items: center;
+    scroll-behavior: smooth;
+
+}
+
+.elemento{
+    flex: 1 0 auto;
+    margin: 0 50px;
+    background-color: #F23D2E;
+    width: 200px;
+    height: 400px;
+}
+
+#carrusel-box{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+#carrusel-box-img{
+    width: 100%;
+    height: 80% ;
+    /* background-color: coral; */
+
+}
+#carrusel-box-img img{
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#carrusel-box-info{
+    width: 100%;
+    height: 20% ;
+    /* background-color: crimson; */
+}
+
 .krabi-portada{
 width: 100%;
     height: 90Vh;
@@ -651,13 +706,16 @@ width: 100%;
 }
 
 .krabi-videos{
-width: 100%;
+    width: 100%;
     height: 90Vh;
     display: flex;
     background-image: url(./img/portfolio7.png);
     background-size: cover;
     background-position: center;
     margin-top: 20px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .portfolio-box{
@@ -715,8 +773,13 @@ width: 100%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     white-space: nowrap;
 
+
 }
 
+.info-portfolio-box-img{
+    /* text-align: center; */
+    justify-content: end;
+}
 
 .play{
     padding-top: 10px;
@@ -732,7 +795,7 @@ width: 100%;
 
 .footer-portfolio {
     width: 100%;
-    height: 80Vh;
+    height: 90Vh;
     display: flex;
     background-image: url(./img/portfolio8.png);
     background-size: cover;
