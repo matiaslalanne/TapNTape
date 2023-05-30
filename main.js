@@ -48,5 +48,3 @@ function scrollIzquierda() {
 function scrollDerecha() {
   carrusel.scrollLeft += 500; // Ajusta la cantidad de scroll según tus necesidades
 }
-
-
