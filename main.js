@@ -5,16 +5,15 @@ window.addEventListener('scroll', function() {
     var logo = document.getElementById('logo');
     var menuHorizontal = document.getElementById('menu-horizontal');
     var tituloNavbar = document.getElementById('title-navbar-a');
+    // var navegador = document.getElementById('navegador');
 
-
-
-    
     var scrollPosition = window.scrollY;
   
     if (scrollPosition > 0) {
       navbar.style.height = '10%';
       logo.style.width ='1.5rem'
       menuHorizontal.style.height = '40px'
+      menuHorizontal.style.fontSize = '1rem'
       tituloNavbar.style.padding= 'auto'
 
 
@@ -23,11 +22,9 @@ window.addEventListener('scroll', function() {
       navbar.style.height = '20%';
       logo.style.width ='4rem'
       menuHorizontal.style.height = '100%'
+      menuHorizontal.style.fontSize = '1.2rem'
       tituloNavbar.style.padding = 'auto'
 
-
-
-      
     }
   });
 
@@ -48,3 +45,4 @@ function scrollIzquierda() {
 function scrollDerecha() {
   carrusel.scrollLeft += 500; // Ajusta la cantidad de scroll según tus necesidades
 }
+

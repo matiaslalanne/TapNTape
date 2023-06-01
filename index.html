@@ -10,9 +10,9 @@
 </head>
 <body> 
 <main class="contenedor">
-    <a target="_blank" href="http://wa.me/+393513786219"><img src="/img/whatsapp.png" alt="" class="img-redes"></a>
-   
-    <section class="seccion1">
+    
+<!-- Navbar y Portada -->
+    <section class="seccion1" id="seccion1">
         <header class="cabecera" id="navbar">
             <div class="reserva">
                 <a target="_blank" href="http://wa.me/+393513786219"><h4>Reservá tu producción de video con 10% OFF</h4></a>
@@ -22,7 +22,7 @@
                 <div class="logo" >
                     <a href="./index.html"><img id="logo"src="/TapNTape/img/logo.png" alt="Logo TNT"></a> 
                  </div>
-                 <nav class="navegador">
+                 <nav class="navegador" id="navegador">
                      <ul class="menu-horizontal" id="menu-horizontal">
                         <li class="actual-title" id="actual-title">
                             <a id="title-navbar-a" href="./index.html">Home</a>
@@ -31,26 +31,26 @@
                          <li >
                              <a id="title-navbar-a" href="./nosotros.html">Nosotros</a>
                              <ul class="menu-vertical">
-                                 <li><a href="./nosotros.html">Quienes Somos</a></li>
-                                 <li><a href="./nosotros.html">Que Hacemos</a></li>
-                                 <li><a href="./nosotros.html">Pilares</a></li>
+                                 <li><a href="./nosotros.html#seccion-nosotros2">Quienes Somos</a></li>
+                                 <li><a href="./nosotros.html#seccion-nosotros3">Que Hacemos</a></li>
+                                 <li><a href="./nosotros.html#seccion-nosotros4">Pilares</a></li>
                              </ul>
                          </li>
                          <li>
                             <a id="title-navbar-a" href="./portfolio.html">Portfolio</a>
                             <ul class="menu-vertical">
-                                <li><a href="./portfolio.html">Oasis Wakepark</a></li>
-                                <li><a href="./portfolio.html">Old Skull Park</a></li>
-                                <li><a href="./portfolio.html">Krabi Green Park</a></li>
+                                <li><a href="./portfolio.html#krabi-portada">Krabi Green Park</a></li>
+                                <li><a href="./portfolio.html#oldskull-portada">Old Skull Park</a></li>
+                                <li><a href="./portfolio.html#oasis-portada">Oasis Wakepark</a></li>
                             </ul>
                         </li>
                          <li>
                              <a id="title-navbar-a" href="./servicios.html">Servicios</a>
                              <ul class="menu-vertical">
-                                 <li><a href="./servicios.html">Skate</a></li>
-                                 <li><a href="./servicios.html">Surf</a></li>
-                                 <li><a href="./servicios.html">Snowboard</a></li>
-                                 <li><a href="./servicios.html">Wakeboard</a></li>
+                                 <li id="wakeboard"><a href="./servicios.html">Wakeboard</a></li>
+                                 <li id="servicios-sub"><a href="./servicios.html#seccion-servicios2">Filmacion y Edición Personalizada</a></li>
+                                 <li id="servicios-sub"><a href="./servicios.html#seccion-servicios3">Edición Personalizada</a></li>
+                                 <li id="servicios-sub"><a href="./servicios.html#seccion-servicios4">Cobertura de Eventos</a></li>
                              </ul>
                          </li>
                          <li>
@@ -89,19 +89,19 @@
 
         
     </section>
-
+<!-- Nosotros -->
     <section class="seccion2">
         <img src="./img/2.png" alt="" class="img-seccion2">
     </section>
-
+<!-- Portfolio -->
     <section class="seccion3">
         <div class="sneakPeek"> 
             <div class="titulo-sneak">
-                <h2>SNEAK A PEEK</h2>
+                <a href="./portfolio.html"><h2>SNEAK A PEEK</h2></a>
                 <a href="https://www.youtube.com/@TapAndTape"target="_blank"><img src="./img/subscribe.png" alt="" class="subscribe"></a>
             </div>
             <div class="sneak-box">
-                <h1><</h1>
+
                 <div class="sneak">
                     <a target="_blank" href="https://www.youtube.com/shorts/AUVtwiGck5c"><img src="./img/video1-sneak.png" alt=""></a>
                     <div class="pie-sneak">
@@ -150,19 +150,17 @@
                         </div>
                     </div>
                 </div>
-                <h1>></h1>
+
                 
             </div>
             
         </div> 
     </section>
-    
+    <!-- Servicios -->
     <section class="seccion4">
         
         <div class="img-servicios" id="img-servicios1">
             <a class="img-servicios-btn" target="_blank" href="./servicios.html#seccion-servicios2"> </a> 
-
-            
         </div>
         <div  class="img-servicios" id="img-servicios2">
             <a class="img-servicios-btn" target="_blank" href="./servicios.html#seccion-servicios3"> </a> 
@@ -172,7 +170,7 @@
         </div>
         <h1 class="titulo-servicio">NUESTRO TRABAJO</h1>
     </section>
-
+<!-- Footer -->
     <footer class="footer" id="footer">
         <div class="titulo-footer">
             <H1>FEEDBACK</H1>
@@ -207,7 +205,10 @@
                     
             </div>
         </div>
-        <a href="./index.html" class="icono-arriba"><img src="./img/icono-arriba.png" alt=""></a>
+        <div class="btn-flecha">
+            <a href="#seccion1" class="icono-arriba"><img src="./img/icono-arriba.png" alt=""></a>
+        </div>
+        
     </footer>
     
     <script src="./main.js"></script>
