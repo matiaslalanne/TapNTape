@@ -101,14 +101,15 @@ nav > ul > li > a{
     align-items: center;
 }
 
-li {
+nav li {
     list-style: none;
     cursor: pointer;
     padding: 1.5vw;
     transition:  all .3s ease 0s;
+    /* font-size: 1.5rem; */
 }
 
-li:hover {
+nav li:hover {
     /* background-color: #008849; */
     text-decoration:underline;
 
@@ -510,17 +511,27 @@ li:hover {
     margin-bottom: 1rem;
     scroll-behavior: smooth;
     
-
-
 }
+
+#wpp-icon{
+    width: 4rem;
+}
+#insta-icon{
+    width: 4rem;
+}
+
 
 .btn-flecha{
     height: 10%;
-
     display: flex;
+    justify-content:right;
+    align-items: center;
+    margin: 1rem;
+    
 }
 .icono-arriba img{
     width: 3rem;
+
 }
 
 

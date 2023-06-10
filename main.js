@@ -3,27 +3,24 @@
 window.addEventListener('scroll', function() {
     var navbar = document.getElementById('navbar');
     var logo = document.getElementById('logo');
-    var menuHorizontal = document.getElementById('menu-horizontal');
-    var tituloNavbar = document.getElementById('title-navbar-a');
-    // var navegador = document.getElementById('navegador');
-
+    var liNavbar = document.getElementById('liNavbar')
     var scrollPosition = window.scrollY;
   
     if (scrollPosition > 0) {
       navbar.style.height = '10%';
       logo.style.width ='1.5rem'
-      menuHorizontal.style.height = '40px'
-      menuHorizontal.style.fontSize = '1rem'
-      tituloNavbar.style.padding= 'auto'
+      // menuHorizontal.style.height = '40px'
+      nav.style.fontSize = '1rem'
+      // tituloNavbar.style.padding= 'auto'
 
 
       
     } else {
       navbar.style.height = '20%';
       logo.style.width ='4rem'
-      menuHorizontal.style.height = '100%'
-      menuHorizontal.style.fontSize = '1.2rem'
-      tituloNavbar.style.padding = 'auto'
+      // menuHorizontal.style.height = '100%'
+      nav.style.fontSize = '1.2rem'
+      // tituloNavbar.style.padding = 'auto'
 
     }
   });
