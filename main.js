@@ -9,18 +9,12 @@ window.addEventListener('scroll', function() {
     if (scrollPosition > 0) {
       navbar.style.height = '10%';
       logo.style.width ='1.5rem'
-      // menuHorizontal.style.height = '40px'
       nav.style.fontSize = '1rem'
-      // tituloNavbar.style.padding= 'auto'
-
-
       
     } else {
       navbar.style.height = '20%';
       logo.style.width ='4rem'
-      // menuHorizontal.style.height = '100%'
       nav.style.fontSize = '1.2rem'
-      // tituloNavbar.style.padding = 'auto'
 
     }
   });
@@ -28,18 +22,31 @@ window.addEventListener('scroll', function() {
 
 // Aca configurando los botones del carrusel
 
-const carrusel = document.getElementById('carrusel');
-const botonIzquierdo = document.getElementById('boton-izquierdo');
-const botonDerecho = document.getElementById('boton-derecho');
+const carrusel1 = document.getElementById('carrusel1');
+const carrusel2 = document.getElementById('carrusel2');
+const carrusel3 = document.getElementById('carrusel3');
+const botonIzquierdo = document.getElementById('boton-izquierdo1');
+const botonDerecho = document.getElementById('boton-derecho1');
+const botonIzquierdo1 = document.getElementById('boton-izquierdo2');
+const botonDerecho1 = document.getElementById('boton-derecho2');
+const botonIzquierdo2 = document.getElementById('boton-izquierdo3');
+const botonDerecho2 = document.getElementById('boton-derecho3');
 
 botonIzquierdo.addEventListener('click', scrollIzquierda);
 botonDerecho.addEventListener('click', scrollDerecha);
+botonIzquierdo1.addEventListener('click', scrollIzquierda);
+botonDerecho1.addEventListener('click', scrollDerecha);
+botonIzquierdo2.addEventListener('click', scrollIzquierda);
+botonDerecho2.addEventListener('click', scrollDerecha);
 
 function scrollIzquierda() {
-  carrusel.scrollLeft -= 500; // Ajusta la cantidad de scroll según tus necesidades
+  carrusel1.scrollLeft -= 500; // Ajusta la cantidad de scroll según tus necesidades
+  carrusel2.scrollLeft -= 500; // Ajusta la cantidad de scroll según tus necesidades
+  carrusel3.scrollLeft -= 500; // Ajusta la cantidad de scroll según tus necesidades
 }
 
 function scrollDerecha() {
-  carrusel.scrollLeft += 500; // Ajusta la cantidad de scroll según tus necesidades
+  carrusel1.scrollLeft += 500; // Ajusta la cantidad de scroll según tus necesidades
+  carrusel2.scrollLeft += 500; // Ajusta la cantidad de scroll según tus necesidades
+  carrusel3.scrollLeft += 500; // Ajusta la cantidad de scroll según tus necesidades
 }
-
