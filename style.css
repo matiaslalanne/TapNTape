@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&family=Roboto:wght@300&display=swap');
-@media (min-width: 1024px) {
+
    
   
 * {
@@ -189,6 +189,8 @@ nav li:hover {
     text-decoration: underline;
 }
 
+
+                                    /* Seccion 1 - Presentacion */
 .presentacion{
     margin-top: 100px;
     display: flex;
@@ -347,14 +349,9 @@ nav li:hover {
 
 
   
-                                    /* Seccion 4  */
+                                    /* Seccion 4 - Servicios */
 
-/* .seccion4{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    flex-direction: row;
-} */
+
 
 .seccion4{
     width: 100%;
@@ -364,8 +361,6 @@ nav li:hover {
     text-align: center;
 
 }
-
-
 
 .img-servicios{
     width: 100%;
@@ -443,6 +438,148 @@ nav li:hover {
     height: 20%;
 }
 
+                                /* Seccion 5 - Coleccion TNT */
+.seccion5{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: cover;
+    background-image: url(./img/coleccion-1.png);
+    position: relative;
+}
+
+.titulocoleccion{
+    width: 100%;
+    height: 27.5%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.div-btn-titulo-coleccion{
+    width: 35%;
+    height: 75%;
+
+}
+
+.btn-titulo-coleccion1{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.btn-titulo-coleccion1 a{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}
+
+.btn-titulo-coleccion1 a img{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.botonesUp{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.botonesUp a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.botonesUp img{
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+}
+
+.remeras{
+    height: 40%;
+    width: 37.5%;
+    background-color: #F23D2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sticker{
+    height: 40%;
+    width: 36.5%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.llaveros{
+    height: 40%;
+    width: 26%;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonesDown{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 1.2rem;
+    opacity: 0;
+}
+
+.botonesDown a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.botonesDown img{
+    background-size: cover;
+    width: 60%;
+    height: 100%;
+}
+
+.ponchos{
+    height: 40%;
+    width: 26%;
+    /* background-color: #F23D2E; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.collares{
+    height: 40%;
+    width: 37.5%;
+    /* background-color:aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.camperas{
+    height: 40%;
+    width: 37.5%;
+    /* background-color:chartreuse; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -695,11 +832,11 @@ width: 100%;
     align-items: center;
     flex-wrap: nowrap;
     overflow: scroll;
-    height: 100%;
+    height: 85%;
     width: 100%;
-    align-items: center;
     scroll-behavior: smooth;
     overflow-x: hidden;
+
 
 
 }
@@ -707,9 +844,10 @@ width: 100%;
 .elemento{
     flex: 1 0 auto;
     margin: 0 50px;
-    width: 200px;
-    height: 400px;
-   
+    width: 250px;
+    height: 450px;
+    margin-top: 3rem
+    
 }
 
 #carrusel-box{
@@ -857,7 +995,7 @@ width: 100%;
 }
 
 
-}
+
 .seccion-servicios3{
     width: 100%;
     height: 90Vh;
@@ -908,28 +1046,100 @@ width: 100%;
     flex-direction: column;
     margin-top: 20px;
     
-    
 }
 
 
                                     /* Coleccion TNT */
-h1 {
-    color: red;
 
+.seccion-coleccion1{
+    width: 100%;
+    height: 80Vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url(./img/coleccion-1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.seccion-coleccion2{
+    width: 100%;
+    height: 90Vh;
+    display: flex;
+    background-image: url(./img/coleccion-2.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+.seccion-coleccion3{
+    width: 100%;
+    height: 90Vh;
+    display: flex;
+    background-image: url(./img/coleccion-3.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+.seccion-coleccion4{
+    width: 100%;
+    height: 90Vh;
+    display: flex;
+    background-image: url(./img/coleccion-4.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+.seccion-coleccion5{
+    width: 100%;
+    height: 90Vh;
+    display: flex;
+    background-image: url(./img/coleccion-5.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+.seccion-coleccion6{
+    width: 100%;
+    height: 90Vh;
+    display: flex;
+    background-image: url(./img/coleccion-6.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.footer-coleccion {
+    width: 100%;
+    height: 90Vh;
+    display: flex;
+    background-image: url(./img/coleccion-7.png);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    margin-top: 20px;
+    
 }
 
 
 
 
+/* Elementos menu hamburguesa */
 
+.toggle-img{
+    width: 2rem;
+    background: transparent;
+    cursor: pointer;
+}
 
-
-
+.btn-toggle{
+    display: none;
+}
 
 
 
                                         /* MOBILE */
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     * {
         margin: 0;
         padding: 0;
@@ -937,14 +1147,39 @@ h1 {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 
+    .btn-toggle{
+        display: block;
+        margin: 1rem;
 
-    .navegador{
+    }
+
+    
+
+    #nav{
+        /* display: none; */
+        flex-direction: column nowrap;
+        justify-content: flex-start;
+        
+    }
+
+    .navbar{
+        flex-direction: row-reverse;
+        
+    }
+    
+    .cont-ul{
+        flex-direction: column;
+        margin-top: 10rem;
+        background-color: #24252a;
+    }
+
+    .cont-ul li ul{
         display: none;
     }
 }
 
 
 /* TABLET */
-@media (min-width: 769px) and (max-width: 1024px) {
-   
-}
+/* @media (min-width: 769px) and (max-width: 1024px) {
+    */
+

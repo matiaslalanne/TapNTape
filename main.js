@@ -32,21 +32,32 @@ const botonDerecho1 = document.getElementById('boton-derecho2');
 const botonIzquierdo2 = document.getElementById('boton-izquierdo3');
 const botonDerecho2 = document.getElementById('boton-derecho3');
 
-botonIzquierdo.addEventListener('click', scrollIzquierda);
-botonDerecho.addEventListener('click', scrollDerecha);
-botonIzquierdo1.addEventListener('click', scrollIzquierda);
-botonDerecho1.addEventListener('click', scrollDerecha);
-botonIzquierdo2.addEventListener('click', scrollIzquierda);
-botonDerecho2.addEventListener('click', scrollDerecha);
+botonIzquierdo.addEventListener('click', scrollIzquierda1);
+botonDerecho.addEventListener('click', scrollDerecha1);
+botonIzquierdo1.addEventListener('click', scrollIzquierda2);
+botonDerecho1.addEventListener('click', scrollDerecha2);
+botonIzquierdo2.addEventListener('click', scrollIzquierda3);
+botonDerecho2.addEventListener('click', scrollDerecha3);
 
-function scrollIzquierda() {
-  carrusel1.scrollLeft -= 500; // Ajusta la cantidad de scroll según tus necesidades
-  carrusel2.scrollLeft -= 500; // Ajusta la cantidad de scroll según tus necesidades
-  carrusel3.scrollLeft -= 500; // Ajusta la cantidad de scroll según tus necesidades
+function scrollIzquierda1() {
+  carrusel1.scrollLeft -= 1400; // Ajusta la cantidad de scroll según tus necesidades
 }
 
-function scrollDerecha() {
-  carrusel1.scrollLeft += 500; // Ajusta la cantidad de scroll según tus necesidades
-  carrusel2.scrollLeft += 500; // Ajusta la cantidad de scroll según tus necesidades
-  carrusel3.scrollLeft += 500; // Ajusta la cantidad de scroll según tus necesidades
+function scrollDerecha1() {
+  carrusel1.scrollLeft += 1400; // Ajusta la cantidad de scroll según tus necesidades
 }
+function scrollIzquierda2() {
+  carrusel2.scrollLeft -= 1400; // Ajusta la cantidad de scroll según tus necesidades
+}
+
+function scrollDerecha2() {
+  carrusel2.scrollLeft += 1400; // Ajusta la cantidad de scroll según tus necesidades
+}
+function scrollIzquierda3() {
+  carrusel3.scrollLeft -= 1400; // Ajusta la cantidad de scroll según tus necesidades
+}
+
+function scrollDerecha3() {
+  carrusel3.scrollLeft += 1400; // Ajusta la cantidad de scroll según tus necesidades
+}
+
