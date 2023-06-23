@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&family=Roboto:wght@300&display=swap');
 
-   
-  
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -21,16 +18,124 @@ html {
 
 }
 
-.seccion1 {
-    height: 100;
+/* header y navbar */
+
+.header{
+    position: fixed;
+    top: 1.1rem;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(1, 1, 1, 0.7); */
+    background-color: white;
+    padding: 0px 10%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    flex-direction: column;
-    
- 
+    z-index: 1000;
+
+
 }
 
-.cabecera {
+.logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.logo img{
+    width: 4rem;
+}
+
+.menuh1{
+    display: none;
+}
+
+.navigation ul{
+    list-style: none;
+flex-wrap: wrap;
+    
+    
+}
+
+.header .navigation ul li{
+    float: left;
+    position: relative;
+    
+
+}
+.header .navigation ul li a{
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+    
+
+}
+.header .navigation ul li a{
+    color: black;
+}
+
+.header .navigation ul li a:hover{
+    text-decoration: underline;
+}
+
+.header .navigation ul li ul {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    background-color: rgba(1, 1, 1, 0.7);
+    display: none;
+    
+}
+
+.header .navigation ul li ul li:hover{
+    background-color: black;
+}
+
+
+.header .navigation ul li ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: white;
+
+}
+
+.header .navigation ul li ul li ul{
+    position: absolute;
+    right: 100px;
+}
+
+.header .navigation ul li ul li {
+    font-size: 15px;
+    text-transform: capitalize;
+    width: 100%;
+    background-color:transparent;
+}
+
+.header .navigation ul li:hover > ul{
+    display: initial;
+}
+
+
+#toggle, header label{
+    display: none;
+    cursor: pointer;
+}
+
+.menu{
+    width: 45px;
+    height: 35px;
+}
+.icon-navbar{
+    display: none;
+}
+
+
+
+/* .cabecera {
     width: 100%;
     height: 20%;
     display: flex;
@@ -39,14 +144,13 @@ html {
     top: 0;
     z-index: 1;
     background-color: #ffffff;
-}
+} */
 .reserva{
     background-color: black;
     width: 100%;
-    /* height: 15%; */
     justify-content: center;
     text-align: center;
-    position: relative;
+    position: fixed;
     z-index: 1;
     text-decoration: none;
 }
@@ -67,7 +171,7 @@ html {
     cursor: pointer;
 }
 
-.navbar {
+/* .navbar {
     width: 100%;
     height: 80%;
     display: flex;
@@ -106,11 +210,10 @@ nav li {
     cursor: pointer;
     padding: 1.5vw;
     transition:  all .3s ease 0s;
-    /* font-size: 1.5rem; */
+
 }
 
 nav li:hover {
-    /* background-color: #008849; */
     text-decoration:underline;
 
 }
@@ -187,22 +290,28 @@ nav li:hover {
 
 #actual-page{
     text-decoration: underline;
-}
+} */
 
 
                                     /* Seccion 1 - Presentacion */
 .presentacion{
-    margin-top: 100px;
-    display: flex;
+    /* height: 100vh;
+
+    display: flex; */
+    min-height: 100vh;
+    background-image: url(./img/1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 
 }
 
-.img-presentacion {
+/* .img-presentacion {
 
     width: 100%;
     height: 100%;
-}
+} */
 
                                         /* Seccion 2 - Nosotros*/
 
@@ -1123,59 +1232,103 @@ width: 100%;
 
 
 
-
-/* Elementos menu hamburguesa */
-
-.toggle-img{
-    width: 2rem;
-    background: transparent;
-    cursor: pointer;
-}
-
-.btn-toggle{
-    display: none;
-}
-
-
-
                                         /* MOBILE */
-@media (max-width: 550px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
+@media (max-width: 950px) {
+   .header label{
+       display: initial;
 
-    .btn-toggle{
-        display: block;
-        margin: 1rem;
+   } 
 
-    }
+   .header label img{
+       width: 2rem;
+   }
 
-    
-
-    #nav{
-        /* display: none; */
-        flex-direction: column nowrap;
-        justify-content: flex-start;
-        
-    }
-
-    .navbar{
+   .header{
+        display: flex;
         flex-direction: row-reverse;
-        
-    }
-    
-    .cont-ul{
-        flex-direction: column;
-        margin-top: 10rem;
-        background-color: #24252a;
-    }
+        padding: 20px 10%;
+   }
 
-    .cont-ul li ul{
-        display: none;
-    }
+   .header .navigation{
+       text-align: center;
+       position: absolute;
+       top: 100%;
+       left: 0;
+       background-color: rgba(255, 255, 255, 0.612);
+       width: 40%;
+       display: none;
+   }
+
+   .header .navigation ul li{
+       width: 100%;
+   }
+
+   .header .navigation ul li a{
+       padding: 8px 30px 8px 10%;
+
+   }
+
+   .header .navigation ul li ul{
+       position: relative;
+       width: 100%;
+       left: 0;
+   }
+
+   .header .navigation ul li ul li{
+       background-color: rgba(1, 1, 1, 0.7);
+   }
+
+   .header .navigation ul li ul li ul{
+       position: relative;
+       width: 100%;
+       left: 0;
+   }
+
+   #toggle:checked ~ .navigation{
+       display: block;
+   }
+
+   .menuh1{
+    display: block;
+    font-weight: 200;
+}
+
+.logo img{
+    width: 2rem;
+}
+
+.icon-navbar{
+    display: flex;
+    width: 20px;
+    justify-content:space-around;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+    flex-direction: initial;
+}
+
+.icon-navbar a{
+    display: flex;
+    width: 50%;
+    align-self: auto;
+}
+
+.icon-navbar a img{
+    width: 2rem;
+    background-color: black;
+}
+
+#wpp-icon{
+    width: 2rem;
+}
+#insta-icon{
+    width: 2rem;
+}
+
+   
+
+
 }
 
 

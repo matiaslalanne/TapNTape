@@ -1,7 +1,7 @@
 // Aca estamos configurado la barra que se pliega al scrolear
 
 window.addEventListener('scroll', function() {
-    var navbar = document.getElementById('navbar');
+    var navbar = document.getElementById('header');
     var logo = document.getElementById('logo');
     var liNavbar = document.getElementById('liNavbar')
     var scrollPosition = window.scrollY;
