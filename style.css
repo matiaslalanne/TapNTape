@@ -294,16 +294,12 @@ nav li:hover {
 
 
                                     /* Seccion 1 - Presentacion */
-.presentacion{
-    /* height: 100vh;
-
-    display: flex; */
-    min-height: 100vh;
+.seccion1{
+    
+    height: 100vh;
     background-image: url(./img/1.png);
-    background-position: center center;
-    background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center;
 
 }
 
@@ -317,18 +313,12 @@ nav li:hover {
 
 .seccion2{
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
+    height: 90vh;
+    background-image: url(./img/2.png);
     background-size: cover;
 
 
 }
-
-.img-seccion2{
-    width: 100%;
-}
-
 
 
 
@@ -374,7 +364,7 @@ nav li:hover {
 }
 
 .subscribe{
-    width: 150px;
+    width: 9rem;
     border-radius: 20px;
     cursor: pointer;
     margin-left: 20px;
@@ -406,14 +396,14 @@ nav li:hover {
 
 .sneak-box h1{
     color: white;
-    font-size: 50px;
+    font-size: 1rem;
     cursor: pointer;
 
 }
 
 
 .sneak img{
-    width: 200px;
+    width: 12rem;
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -422,7 +412,7 @@ nav li:hover {
 .pie-sneak{
     display: flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
     width: 100%;
     margin-top: 20px;
@@ -431,7 +421,7 @@ nav li:hover {
 }
 .info-sneak{
     color: white;
-    font-size: 12px;
+    font-size: 0.8rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1234,22 +1224,35 @@ width: 100%;
 
                                         /* MOBILE */
 @media (max-width: 950px) {
-   .header label{
+
+    /* Header */
+
+.reserva{
+    position: fixed;
+}
+
+.reserva a h4{
+    font-size: 0.8rem;
+}
+
+.header label{
        display: initial;
 
    } 
 
-   .header label img{
+.header label img{
        width: 2rem;
    }
 
-   .header{
+.header{
+
         display: flex;
         flex-direction: row-reverse;
         padding: 20px 10%;
+        height: 5%;
    }
 
-   .header .navigation{
+.header .navigation{
        text-align: center;
        position: absolute;
        top: 100%;
@@ -1259,36 +1262,32 @@ width: 100%;
        display: none;
    }
 
-   .header .navigation ul li{
+.header .navigation ul li{
        width: 100%;
    }
 
-   .header .navigation ul li a{
+.header .navigation ul li a{
        padding: 8px 30px 8px 10%;
 
    }
-
-   .header .navigation ul li ul{
+.header .navigation ul li ul{
        position: relative;
        width: 100%;
        left: 0;
    }
-
-   .header .navigation ul li ul li{
+.header .navigation ul li ul li{
        background-color: rgba(1, 1, 1, 0.7);
    }
-
-   .header .navigation ul li ul li ul{
+.header .navigation ul li ul li ul{
        position: relative;
        width: 100%;
        left: 0;
    }
-
-   #toggle:checked ~ .navigation{
+#toggle:checked ~ .navigation{
        display: block;
    }
 
-   .menuh1{
+.menuh1{
     display: block;
     font-weight: 200;
 }
@@ -1326,7 +1325,106 @@ width: 100%;
     width: 2rem;
 }
 
-   
+/* Seccion 1 - Home */
+
+.seccion1 {
+    width: 100%;
+    height: 110vh; /* Ajusta la altura de la sección según tus necesidades */
+    background-image: url(./img/home-mobile-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+/* Seccion 2 - Nosotros */
+.seccion2{
+    background-image: url(./img/home-mobile-2.png);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Seccion 3 - Portfolio */
+
+.seccion3{
+
+    background-image: url(./img/home-mobile-3.png);
+    display: flex;
+
+}
+.sneak{
+    max-width: 50%;
+    max-height: 50%;
+
+}
+.sneak a img{
+    width: 5rem;
+
+}
+.sneakPeek{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.sneak-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.titulo-sneak{
+    display: none;
+}
+
+.info-sneak{
+    font-size: 0.5rem;
+}
+
+.play a img{
+    width: 1rem;
+}
+
+/* Seccion 4 - Servicios */
+
+.seccion4{
+    background-image: url(./img/home-mobile-4.png);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.img-servicios{
+    display: none;
+}
+
+.titulo-servicio{
+    display: none;
+}
+
+
+/* Seccion 5 - Coleccion TNT */
+
+.seccion5{
+    background-image: url(./img/home-mobile-5.png);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Footer Home */
+
+.footer{
+    display: none;
+}
 
 
 }

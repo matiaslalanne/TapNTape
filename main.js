@@ -1,23 +1,25 @@
 // Aca estamos configurado la barra que se pliega al scrolear
 
 window.addEventListener('scroll', function() {
-    var navbar = document.getElementById('header');
-    var logo = document.getElementById('logo');
-    var liNavbar = document.getElementById('liNavbar')
-    var scrollPosition = window.scrollY;
-  
+  var navbar = document.getElementById('header');
+  var logo = document.getElementById('logo');
+  var liNavbar = document.getElementById('liNavbar');
+  var scrollPosition = window.scrollY;
+  var windowWidth = window.innerWidth;
+
+  if (windowWidth > 768) { // Verificar que el ancho de la ventana sea mayor a 768px (dispositivo no móvil)
     if (scrollPosition > 0) {
       navbar.style.height = '10%';
-      logo.style.width ='1.5rem'
-      nav.style.fontSize = '1rem'
-      
+      logo.style.width = '1.5rem';
+      liNavbar.style.fontSize = '1rem';
     } else {
       navbar.style.height = '20%';
-      logo.style.width ='4rem'
-      nav.style.fontSize = '1.2rem'
-
+      logo.style.width = '4rem';
+      liNavbar.style.fontSize = '1.2rem';
     }
-  });
+  }
+});
+
 
 
 // Aca configurando los botones del carrusel
